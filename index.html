@@ -1,0 +1,87 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style_index.css">
+</head>
+
+<body>
+
+
+	<div>
+		<div class="container">
+
+			<div class="my-5">
+				<div class="row">
+
+					<div class="col-6">
+						<div class="imgs">
+
+							<div id="BoxImg">
+								<!-- <img id="img" src="images/about.png" alt=""> -->
+								<img id="Img" alt="">
+								<canvas id="canvas"></canvas>	<!-- يشتغل معايا download ده علشان لم اعمل  -->
+							</div>
+
+							<div class="box-upload">
+								<label for="Upload">Upload </label>
+								<input type="file" name="" id="Upload">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-6">
+						<div class="box-filters">
+							<ul>
+								<li>
+									<label for="Saturate">Saturate</label>
+									<input type="range" name="" id="Saturate" min="0" max="200" value="100">
+								</li>
+								<li>
+									<label for="Contrast">Contrast</label>
+									<input type="range" name="" id="Contrast" min="0" max="200" value="100">
+								</li>
+								<li>
+									<label for="Brightness">Brightness</label>
+									<input type="range" name="" id="Brightness" min="0" max="200" value="100">
+								</li>
+								<li>
+									<label for="Sepia">Sepia</label>
+									<input type="range" name="" id="Sepia" min="0" max="200" value="0">
+								</li>
+								<li>
+									<label for="Grayscale">Grayscale</label>
+									<input type="range" name="" id="Grayscale" min="0" max="1" value="0" step="0.1">
+								</li>
+								<li>
+									<label for="Blur">Blur</label>
+									<input type="range" name="" id="Blur" min="0" max="10" value="0" step="0.1">
+								</li>
+								<li>
+									<label for="hue-rotate">Hue Rotate</label>
+									<input type="range" name="" id="hue-rotate" min="0" max="350" value="0">
+								</li>
+								<li>
+									<a download="download-img" id="Download">Download</a>
+									<!-- download="download-img"	download ده اسم الملف اللي بيتعمل  -->
+									<span id="Reset">Reset</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
